@@ -1,0 +1,35 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css"></style>
+    <title>JSFuck</title>
+    <meta charset="utf8" />
+</head>
+<body>
+    <h1>JSFuck - JS version of Mindfuck</h1>
+    <p>A way of writing and executing any JS using only 6 characters <code>()[]+!</code>.</p>
+    <p>Write some JS below and convert it. You can then run it by clicking the Execute button, copy-pasting it into the console,
+        or saving it to a file and running it with node.</p>
+    <p>The JS powering this website is written in JSFuck.</p>
+    <div id="loading"><p><b>Please wait while the JS loads. This can take a few seconds...</b></p></div>
+    <div id="mainArea" hidden>
+        <textarea spellcheck="false" type="text" class="js-input" id="jsInput">alert(1)</textarea>
+        <br>
+        <div>
+            <button onclick="compileInput()">Convert</button>
+            <button onclick="execute()">Execute</button>
+        </div>
+        <br>
+        Output:
+        <br>
+        <textarea spellcheck="false" type="text" class="js-output" id="jsOutput"></textarea>
+        <br>
+        <div id="outputSize"></div>
+        <div id="error" class="error-message" hidden>
+            The copmiled output is very long and has been truncated. Copy entire output to clipboard?
+            <button onclick="copyToClipboard()">Copy output</button>
+        </div>
+    </div>
+    <script src="js/compiledCompiler.js"></script>
+    <script src="js/compiledCompilerInterface.js"></script>
+</body>
+</html>
