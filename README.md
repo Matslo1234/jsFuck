@@ -3,7 +3,7 @@
 A way of writing and executing any JS using only 6 different characters `()[]+!`.\
 It doesn't depend on the browser so the code can also be run in node. The generated code will not run on any page where 'unsafe-eval' is not an allowed source of script.\
 This is a demonstration of the interesting type conversions build into JS.\
-The JS used by the website is written in JSFuck. Original compiler and compilerInterface are only available here on GitHub.\
+The JS used by the website is written in JSFuck. Original compiler and compilerInterface are only available here on GitHub.
 
 ## Example
 `alert(1)` turns into
